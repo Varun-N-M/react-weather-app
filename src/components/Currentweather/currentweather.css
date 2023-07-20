@@ -1,0 +1,37 @@
+.current-container{
+    padding: 10px;
+}
+aside>*{
+    margin: 10px;
+}
+.top-details{
+    font-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.temp-unit{
+    font-size: small;
+}
+.temp-value{
+    font-size: 25px;
+}
+.icon-img{
+    max-width: 60px;
+    margin-right: 10px;
+}
+.details{
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.bot-details{
+    margin-top: 10px;
+}
+@media screen and (max-width:920px) {
+    .current-container{
+        margin: 10px;
+    }
+}

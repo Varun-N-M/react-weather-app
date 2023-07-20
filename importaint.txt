@@ -1,0 +1,9 @@
+apiKey = "aedad2a53644a99d72136eb2fc6e9e9b"
+
+https://api.openweathermap.org/geo/1.0/direct?q=shimoga&limit=1&appid=aedad2a53644a99d72136eb2fc6e9e9b
+
+https://api.openweathermap.org/data/2.5/forecast?lat=13.9326093&lon=75.574978&units=metric&appid=aedad2a53644a99d72136eb2fc6e9e9b
+
+https://api.openweathermap.org/data/2.5/weather?q=shimoga&units=metric&appid=aedad2a53644a99d72136eb2fc6e9e9b
+
+https://api.openweathermap.org/geo/1.0/reverse?lat=13.9326093&lon=75.574978&limit=1&appid=aedad2a53644a99d72136eb2fc6e9e9b

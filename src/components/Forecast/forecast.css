@@ -1,0 +1,21 @@
+.forecast-data{
+    display: flex;
+    flex-direction: column;
+}
+.forecast-container{
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-icon-img{
+    max-width: 45px;
+}
+.forecast-details{
+    font-size: 13px;
+}
+@media screen and (max-width:920px) {
+    .forecast-data{
+        margin: 10px;
+    }
+}
