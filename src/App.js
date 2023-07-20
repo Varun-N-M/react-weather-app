@@ -43,12 +43,16 @@ const App = () => {
     const uniqueForecastdays = []
     const forecasts = []
 
+    // const fiveForecastDate = data.list.filter(forecast => {
+    //   const forecastdate = new Date(forecast.dt_txt).getDate()
+    //   if (!uniqueForecastdays.includes(forecastdate)) {
+    //     return uniqueForecastdays.push(forecastdate)
+    //   } else return
+    // })
     const fiveForecastDate = data.list.filter(forecast => {
-      const forecastdate = new Date(forecast.dt_txt).getDate()
-      if (!uniqueForecastdays.includes(forecastdate)) {
-        return uniqueForecastdays.push(forecastdate)
-      } else return
-    })
+      const forecastdate = new Date(forecast.dt_txt).getDate();
+      return !uniqueForecastdays.includes(forecastdate) ? uniqueForecastdays.push(forecastdate) : false;
+    });
     fiveForecastDate.forEach((weatherItem, index) => {
       if (index !== 0) {
         const date = new Date(weatherItem.dt_txt).toDateString()
