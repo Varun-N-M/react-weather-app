@@ -29,6 +29,18 @@ aside>*{
 }
 .bot-details{
     margin-top: 10px;
+
+}
+.bot-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.calender, .location-icon{
+    max-width: 15px;
+    filter: brightness(0) invert(1);
+
 }
 @media screen and (max-width:920px) {
     .current-container{

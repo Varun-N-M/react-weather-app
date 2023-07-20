@@ -29,6 +29,13 @@ nav{
     border: none;
     outline: none;
 }
+.search-icon{
+    max-width: 20px;
+    filter: brightness(0) invert(1);
+}
+.gps-icon{
+    max-width: 20px;
+}
 .search-button{
     background-color: transparent;
     color: white;
