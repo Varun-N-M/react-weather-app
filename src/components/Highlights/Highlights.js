@@ -25,7 +25,7 @@ const Highlights = ({ moreDetails }) => {
           <div className='temp-container'>
             <h4>Temperature details:</h4>
             <div className='temp-details'>
-              <img src='https://cdn-icons-png.flaticon.com/128/1684/1684324.png' className='t-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/1684/1684324.png' className='t-icon' alt='icon'/>
               <div className='t-d'>
                 <div className='f-l'>
                   <h5>Feels like: </h5>
@@ -46,14 +46,14 @@ const Highlights = ({ moreDetails }) => {
             <h4>Sunrise & Sunset:</h4>
             <div className='sun-details'>
               <div className='rise-container'>
-                <img src='https://cdn-icons-png.flaticon.com/128/3920/3920639.png' className='r-icon'/>
+                <img src='https://cdn-icons-png.flaticon.com/128/3920/3920639.png' className='r-icon' alt='icon'/>
                 <div className='rise-details'>
                   <h5>Sunrise:</h5>
                   <span>{formattedSunrise}</span>
                 </div>
               </div>
               <div className='set-container'>
-              <img src='https://cdn-icons-png.flaticon.com/128/3920/3920728.png' className='s-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/3920/3920728.png' className='s-icon' alt='icon'/>
                 <div className='set-details'>
                   <h5>Sunset:</h5>
                   <span>{formattedSunset}</span>
@@ -68,28 +68,28 @@ const Highlights = ({ moreDetails }) => {
             <h5>Pressure:</h5>
 
             <div className='d-details'>
-              <img src='https://cdn-icons-png.flaticon.com/128/7334/7334246.png' className='d-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/7334/7334246.png' className='d-icon' alt='icon'/>
               <span>{pressure} hPa</span>
             </div>
           </div>
           <div className='d-container'>
             <h5>Humidity:</h5>
             <div className='d-details'>
-              <img src='https://cdn-icons-png.flaticon.com/128/727/727790.png' className='d-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/727/727790.png' className='d-icon' alt='icon'/>
               <span>{humidity} %</span>
             </div>
           </div>
           <div className='d-container'>
             <h5>Visibility:</h5>
             <div className='d-details'>
-              <img src='https://cdn-icons-png.flaticon.com/128/3395/3395544.png' className='d-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/3395/3395544.png' className='d-icon' alt='icon'/>
               <span>{visibility/1000} km</span>
             </div>
           </div>
           <div className='d-container'>
             <h5>Wind speed:</h5>
             <div className='d-details'>
-              <img src='https://cdn-icons-png.flaticon.com/128/6015/6015171.png' className='d-icon'/>
+              <img src='https://cdn-icons-png.flaticon.com/128/6015/6015171.png' className='d-icon' alt='icon'/>
 
               <span>{speed} kmph</span>
             </div>
