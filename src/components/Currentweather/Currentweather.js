@@ -19,11 +19,11 @@ const Currentweather = ({ currentWeather }) => {
         <hr/>
         <div className='bot-details'>
           <h5 className='bot-detail'>
-            <img src='https://cdn-icons-png.flaticon.com/128/3239/3239948.png' className='calender'/>
+            <img src='https://cdn-icons-png.flaticon.com/128/3239/3239948.png' className='calender' alt='icon'/>
             <span className='details'>{date}</span>
           </h5>
           <h5 className='bot-detail'>
-            <img src='https://cdn-icons-png.flaticon.com/128/3082/3082383.png' className='location-icon' />
+            <img src='https://cdn-icons-png.flaticon.com/128/3082/3082383.png' className='location-icon' alt='icon' />
             <span className='details'>{name}</span>
           </h5>
         </div>
@@ -33,10 +33,3 @@ const Currentweather = ({ currentWeather }) => {
 }
 
 export default Currentweather
-
-{/* <h5 className='bot-detail'>
-            <img src='https://cdn-icons-png.flaticon.com/128/3239/3239948.png' className='calender'/>
-          </h5>
-          <h5 className='bot-detail'>
-            <img src='https://cdn-icons-png.flaticon.com/128/5338/5338588.png' className='location-icon' />
-          </h5> */}

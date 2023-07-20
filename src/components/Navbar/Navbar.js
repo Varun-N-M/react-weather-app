@@ -34,11 +34,11 @@ const Navbar = ({onCityChange,getUserCoordinates}) => {
                 onKeyDown={handleKey}
             />
             <button className='search-button' onClick={handleClick}>
-                <img src='https://cdn-icons-png.flaticon.com/128/2811/2811806.png' className='search-icon'/>
+                <img src='https://cdn-icons-png.flaticon.com/128/2811/2811806.png' className='search-icon' alt='icon'/>
             </button>
         </div>
         <div className='current-location' onClick={getUserCoordinates}>
-            <img src='https://cdn-icons-png.flaticon.com/128/1549/1549624.png' className='gps-icon'/>
+            <img src='https://cdn-icons-png.flaticon.com/128/1549/1549624.png' className='gps-icon' alt='icon'/>
             <span className='c-l'>Current location</span>
         </div>
     </nav>
