@@ -4,7 +4,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    padding: 10px 35px;
     margin-bottom: 20px;
 }
 .logo-container{
@@ -15,37 +15,14 @@ nav{
 .logo-img{
     max-width: 30px;
 }
-.search-container{
-    padding: 4px 10px;
-    border-radius: 20px;
-    background-color: #1d1b1f;
-    display: flex;
-    align-items: center;
-}
-.search-bar{
-    padding: 4px 10px;
-    color: white;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-.search-icon{
-    max-width: 20px;
-    filter: brightness(0) invert(1);
-}
+
 .gps-icon{
     max-width: 20px;
 }
-.search-button{
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 15px;
-}
+
 .current-location{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #b8a3e9;
     color: black;

@@ -1,48 +1,46 @@
-import React, { useState } from 'react'
-import "./navbar.css"
+import React, { useState } from "react";
+import "./navbar.css";
+import { Search } from "../SearchBar/SearchBar";
 
-const Navbar = ({onCityChange,getUserCoordinates}) => {
+const Navbar = ({ onCityChange, getUserCoordinates }) => {
+  const [searchTerm, setSearchTerm] = useState("");
 
-    const [searchTerm, setSearchTerm] = useState("")
-
-    function handleClick(){
-        onCityChange(searchTerm)
-    }
-
-    function handleKey(e){
-        if(e.key === "Enter"){
-            onCityChange(searchTerm)
-        }
-    }
+  const handleClick = () => {
+    onCityChange(searchTerm);
+  };
+  const handleKey = (e) => {
+    onCityChange(searchTerm);
+  };
+  const handleChange = (content) => {
+    setSearchTerm(content.toLowerCase());
+  };
 
   return (
     <nav>
-        <div className='logo-container'>
-            <img 
-                src='https://cdn-icons-png.flaticon.com/128/4814/4814489.png' 
-                alt='logo'
-                autoFocus
-                className='logo-img'/>
-            <h2 className='logo-title'>weatherio</h2>
-        </div>
-        <div className='search-container'>
-            <input
-                type='text'
-                placeholder='Search city...'
-                className='search-bar'
-                onChange={e => setSearchTerm(e.target.value)}
-                onKeyDown={handleKey}
-            />
-            <button className='search-button' onClick={handleClick}>
-                <img src='https://cdn-icons-png.flaticon.com/128/2811/2811806.png' className='search-icon' alt='icon'/>
-            </button>
-        </div>
-        <div className='current-location' onClick={getUserCoordinates}>
-            <img src='https://cdn-icons-png.flaticon.com/128/1549/1549624.png' className='gps-icon' alt='icon'/>
-            <span className='c-l'>Current location</span>
-        </div>
+      <div className="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/4814/4814489.png"
+          alt="logo"
+          autoFocus
+          className="logo-img"
+        />
+        <h2 className="logo-title">weatherio</h2>
+      </div>
+      <Search
+        onSearchContentChange={handleChange}
+        searchButtonClicked={handleClick}
+        onEnterKeyPress={handleKey}
+      />
+      <div className="current-location" onClick={getUserCoordinates}>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
+          className="gps-icon"
+          alt="icon"
+        />
+        <span className="c-l">Current location</span>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
