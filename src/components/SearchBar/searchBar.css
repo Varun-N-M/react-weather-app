@@ -76,3 +76,36 @@ button{
 a{
     text-decoration: none;
 }
+
+@media screen and (max-width:768px) {
+    .search-bar-container{
+        padding: 4px 10px;
+    }
+    .search-bar{
+        gap: 0;
+    }
+    .search-bar-container .results-container{
+        width: 0;
+        padding: 0;
+    }
+  
+
+    .search-bar-container:hover .results-container{
+        width: 100%;
+    }
+
+    .search-bar-container input{
+        width: 0;
+        padding: 0;
+    }
+    .search-bar-container button{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .search-bar-container:hover input{
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+
+

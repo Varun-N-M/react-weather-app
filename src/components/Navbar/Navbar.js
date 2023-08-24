@@ -17,27 +17,56 @@ const Navbar = ({ onCityChange, getUserCoordinates }) => {
 
   return (
     <nav>
-      <div className="logo-container">
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/4814/4814489.png"
-          alt="logo"
-          autoFocus
-          className="logo-img"
+      <div className="big-screen-nav">
+        <div className="logo-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4814/4814489.png"
+            alt="logo"
+            autoFocus
+            className="logo-img"
+          />
+          <h2 className="logo-title">weatherio</h2>
+        </div>
+        <Search
+          onSearchContentChange={handleChange}
+          searchButtonClicked={handleClick}
+          onEnterKeyPress={handleKey}
         />
-        <h2 className="logo-title">weatherio</h2>
+        <div className="current-location" onClick={getUserCoordinates}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
+            className="gps-icon"
+            alt="icon"
+          />
+          <span className="c-l">Current location</span>
+        </div>
       </div>
-      <Search
-        onSearchContentChange={handleChange}
-        searchButtonClicked={handleClick}
-        onEnterKeyPress={handleKey}
-      />
-      <div className="current-location" onClick={getUserCoordinates}>
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
-          className="gps-icon"
-          alt="icon"
-        />
-        <span className="c-l">Current location</span>
+
+      <div className="small-screen-nav">
+        <div className="logo-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4814/4814489.png"
+            alt="logo"
+            autoFocus
+            className="logo-img"
+          />
+          <h2 className="logo-title">weatherio</h2>
+        </div>
+        <div className="search-and-location">
+          <Search
+            onSearchContentChange={handleChange}
+            searchButtonClicked={handleClick}
+            onEnterKeyPress={handleKey}
+          />
+          <div className="current-location" onClick={getUserCoordinates}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
+              className="gps-icon"
+              alt="icon"
+            />
+            <span className="c-l">Current location</span>
+          </div>
+        </div>
       </div>
     </nav>
   );

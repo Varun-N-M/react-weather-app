@@ -1,8 +1,8 @@
 nav{
+    width: 100%;
     height: 9vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     padding: 10px 35px;
     margin-bottom: 20px;
@@ -19,6 +19,7 @@ nav{
 
 .gps-icon{
     max-width: 20px;
+    
 }
 
 .current-location{
@@ -32,28 +33,56 @@ nav{
     border-radius: 15px;
     cursor: pointer;
 }
+
+.search-and-location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    /* gap: 200px; */
+}
+
 @media screen and (max-width:768px) {
     nav{
         font-size: 10px;
         height: 7vh;
         justify-content: space-between;
         margin: 10px;
-        padding: 10px 15px;
+        padding: 30px 20px;
     }
     .logo-img{
         max-width: 15px;
     }
-    .search-bar{
-        padding: 2px 5px;
-    }
-    .search-button{
-        padding: 2px;
-    }
+  
+  
     .current-location{
-        padding: 4px 10px;
-        font-size: 18px;
+        padding: 5px 15px;
+        font-size: 20px;
     }
     .current-location>.c-l{
         display: none;
     }
+    .search-and-location{
+        gap: 10px;
+    }
+    .small-screen-nav{
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+    .big-screen-nav{
+        display: none;
+    }
 }
+
+@media (min-width: 768px) {
+    .small-screen-nav {
+      display: none;
+    }
+    .big-screen-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+  }

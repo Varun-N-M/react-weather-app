@@ -16,11 +16,10 @@ export const Search = ({
     const newValue = event.target.value;
     setValue(newValue);
     onSearchContentChange(newValue);
-    handleInteraction("click");
+    setActive(true);
   };
 
   useEffect(() => {
-    setActive(true);
     if (value === "") {
       setSearchData([]);
     } else {
@@ -42,7 +41,8 @@ export const Search = ({
 
   const handleClick = (name) => {
     setValue(name);
-    handleInteraction("click");
+    onSearchContentChange(name)
+    setActive(false);
   };
 
   const searchClick = () => {
