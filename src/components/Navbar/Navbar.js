@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Search } from "../SearchBar/SearchBar";
+import { BiCurrentLocation } from "react-icons/bi";
 
 const Navbar = ({ onCityChange, getUserCoordinates }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,11 +34,7 @@ const Navbar = ({ onCityChange, getUserCoordinates }) => {
           onEnterKeyPress={handleKey}
         />
         <div className="current-location" onClick={getUserCoordinates}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
-            className="gps-icon"
-            alt="icon"
-          />
+          <BiCurrentLocation />
           <span className="c-l">Current location</span>
         </div>
       </div>
@@ -59,11 +56,8 @@ const Navbar = ({ onCityChange, getUserCoordinates }) => {
             onEnterKeyPress={handleKey}
           />
           <div className="current-location" onClick={getUserCoordinates}>
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/1549/1549624.png"
-              className="gps-icon"
-              alt="icon"
-            />
+            <BiCurrentLocation className="gps-icon" />
+
             <span className="c-l">Current location</span>
           </div>
         </div>
