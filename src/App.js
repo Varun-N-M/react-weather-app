@@ -99,22 +99,44 @@ const App = () => {
         getUserCoordinates={getUserCoordinates}
       />
       <main>
-        <div className="sidebar">
-          {currentWeather && (
-            <aside>
-              <Currentweather city={city} currentWeather={currentWeather} />
-            </aside>
-          )}
-          {forecast.length > 0 && (
-            <aside className="forecast-data">
-              {forecast.map((item, index) => (
-                <Forecast key={index} forecast={item} />
-              ))}
-            </aside>
-          )}
+        <div className="big-screen">
+          <div className="sidebar">
+            {currentWeather && (
+              <aside>
+                <Currentweather city={city} currentWeather={currentWeather} />
+              </aside>
+            )}
+            {forecast.length > 0 && (
+              <aside className="forecast-data">
+                {forecast.map((item, index) => (
+                  <Forecast key={index} forecast={item} />
+                ))}
+              </aside>
+            )}
+          </div>
+          <div className="highlights">
+            {moreDetails && <Highlights moreDetails={moreDetails} />}
+          </div>
         </div>
-        <div className="highlights">
-          {moreDetails && <Highlights moreDetails={moreDetails} />}
+
+        <div className="small-screen">
+          <div className="sidebar">
+            {currentWeather && (
+              <aside>
+                <Currentweather city={city} currentWeather={currentWeather} />
+              </aside>
+            )}
+            <div className="highlights">
+              {moreDetails && <Highlights moreDetails={moreDetails} />}
+            </div>
+            {forecast.length > 0 && (
+              <aside className="forecast-data">
+                {forecast.map((item, index) => (
+                  <Forecast key={index} forecast={item} />
+                ))}
+              </aside>
+            )}
+          </div>
         </div>
       </main>
     </div>
