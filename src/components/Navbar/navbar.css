@@ -17,8 +17,8 @@ nav {
   max-width: 40px;
   width: 100%;
 }
-.logo-title{
-    font-size: 25px;
+.logo-title {
+  font-size: 25px;
 }
 
 .current-location {
@@ -38,33 +38,36 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* gap: 200px; */
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    font-size: 10px;
-    height: 7vh;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     padding: 30px 20px;
+    gap: 10px;
   }
-
+  .logo-title {
+    font-size: 18px;
+  }
+  .logo-img {
+    max-width: 20px;
+    width: 100%;
+  }
 
   .current-location {
     margin-top: 7px;
-    height: 50px;
+    height: 45px;
     width: 50px;
     font-size: 20px;
-    gap: 0;
   }
 
   .current-location > .c-l {
     display: none;
   }
   .search-and-location {
-    gap: 10px;
+    gap: 5px;
   }
   .small-screen-nav {
     width: 100%;

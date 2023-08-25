@@ -82,6 +82,8 @@ export const Search = ({
           placeholder="search"
           value={value}
           onChange={handleChange}
+          onFocus={()=>setActive(true)}
+          onBlur={()=>setActive(false)}
           onKeyDown={handleKeyDown}
         />
         <button onClick={searchClick}>

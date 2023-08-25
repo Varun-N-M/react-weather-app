@@ -34,7 +34,7 @@ const Navbar = ({ onCityChange, getUserCoordinates }) => {
           onEnterKeyPress={handleKey}
         />
         <div className="current-location" onClick={getUserCoordinates}>
-          <BiCurrentLocation />
+          <BiCurrentLocation className="gps-icon" />
           <span className="c-l">Current location</span>
         </div>
       </div>
@@ -57,7 +57,6 @@ const Navbar = ({ onCityChange, getUserCoordinates }) => {
           />
           <div className="current-location" onClick={getUserCoordinates}>
             <BiCurrentLocation className="gps-icon" />
-
             <span className="c-l">Current location</span>
           </div>
         </div>

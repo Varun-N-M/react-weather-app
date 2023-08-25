@@ -72,12 +72,12 @@ a {
 @media screen and (max-width: 768px) {
   .search-bar-container {
     padding: 4px 10px;
+    margin-left: 20px;
   }
   .search-bar {
     gap: 0;
   }
   .search-bar-container .results-container {
-    width: 0;
     padding: 0;
   }
 
@@ -90,11 +90,12 @@ a {
     padding: 0;
   }
   .search-bar-container button {
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 10px;
   }
   .search-bar-container:hover input {
     width: 100%;
+    transition: width 0.8s ease-in-out;
     padding: 5px 10px;
   }
 }
