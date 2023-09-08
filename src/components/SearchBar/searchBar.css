@@ -53,6 +53,7 @@ button {
 .result-item,
 .suggestion-content {
   margin-top: 5px;
+  margin-bottom: 5px;
   padding: 10px;
   background-color: transparent;
   display: flex;
@@ -85,17 +86,10 @@ a {
     width: 100%;
   }
 
-  .search-bar-container input {
-    width: 0;
-    padding: 0;
-  }
+
   .search-bar-container button {
     font-size: 15px;
     padding: 10px 10px;
   }
-  .search-bar-container:hover input {
-    width: 100%;
-    transition: width 0.8s ease-in-out;
-    padding: 5px 10px;
-  }
+
 }
