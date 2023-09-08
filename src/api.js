@@ -3,7 +3,7 @@ export async function fetchData(prefix) {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "0288073a93msha2824756dc2d43fp1e77f6jsn734dd47b072c",
+        "X-RapidAPI-Key": process.env.REACT_APP_CITY_NAME_SUGGESTION,
         "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
       },
     };

@@ -9,7 +9,7 @@ const App = () => {
   const [currentWeather, setCurrentWeather] = useState("");
   const [forecast, setForecast] = useState("");
   const [moreDetails, setMoreDetails] = useState("");
-  const apiKey = "aedad2a53644a99d72136eb2fc6e9e9b";
+  const apiKey = process.env.REACT_APP_WEATHER_DATA;
 
   function getCityCoordinates(city) {
     fetch(
